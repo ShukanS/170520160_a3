@@ -62,11 +62,21 @@
 
 @media screen and (max-width: 600px) {
   [class*="column-header-left"] {
+    float: none;
     width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  [class*="row-header"] {
+    display: inline;
   }
 
   [class*="column-header-right"] {
+    float: none;
     width: 100%;
+    text-align: center;
+    margin-left: auto;
   }
 
   [class*="bio"] {
