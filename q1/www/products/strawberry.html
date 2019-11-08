@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Shukan's Donuts</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script src="http://wlu-cp202.appspot.com/CP202/Fall2019/shopping_cart_v1/cart.js" async></script>
+  <script>
+    localStorage.checkoutURL = '../checkout/checkout.html';
+  </script>
+</head>
+
+<body class="background">
+
+  <!-- Navbar Code -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #f6cd90;">
+      <a class="navbar-brand" href="../index.html">Shukan's Donuts</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Products<span class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="chocolate.html">Chocolate<span class="sr-only"></span></a>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Strawberry<span class="sr-only">(current)</span></a>
+          </li>
+
+
+        </ul>
+
+    </nav>
+  </header>
+  <!--Navbar code-->
+
+
+  <div class="row">
+    <div class="col strawberrybg">
+      <div class="col-md-12">
+        <div class="component">
+          <div class="card">
+            <div class="card-header">
+              <img class="card-img strawberry" src="../img/strawberry.png" alt="donut">
+            </div>
+            <div class="card-body strawberry">
+              <h1 class="card-title">Strawberry Donut</h1>
+            </div>
+            <div class="card-footer strawberry">
+              <a href="#" onclick="clientAddItemToCart({prodName: 'Strawberry Donut', prodDesc: 'Strawberry', prodPrice: '5.00', prodQty: '1'});" class="btn btn-primary btn-lg strawberrybutton">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

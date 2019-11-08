@@ -1,0 +1,90 @@
+
+.avatar {
+  width: 150px !important;
+  height: 150px !important;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.row-header {
+  display: flex;
+  max-width: 960px;
+  margin: auto;
+}
+
+.column-header-left {
+  display: flex;
+  float: left;
+  align-items: center;
+  justify-content: left;
+  width: 33%;
+}
+
+.column-header-right {
+  float: left;
+  align-items: center;
+  justify-content: center;
+  width: 66%;
+  margin: 36px;
+}
+
+.column {
+  max-width: 900px;
+  display: flex;
+  margin: auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-container img{
+  width: 293px;
+}
+
+.flex-container div{
+  margin: 12px;
+  height: 293px;
+  width: 293px;
+}
+
+@media screen and (max-width: 900px) {
+  [class*="column-header-left"] {
+    width: 50%;
+  }
+  [class*="column-header-right"] {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  [class*="column-header-left"] {
+    width: 100%;
+  }
+
+  [class*="column-header-right"] {
+    width: 100%;
+  }
+
+  [class*="bio"] {
+    display: none;
+  }
+}
+
+
+.account {
+  font-size: 28px;
+}
+
+.bio {
+  font-size: 14px;
+}
+
+body {
+  font-family: Verdana, Arial;
+  max-width: 1200px;
+  margin: auto;
+}

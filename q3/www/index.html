@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/app.js"async></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <title>FakeChimp</title>
+</head>
+
+<body>
+  <img src="img/logo-color.png" alt="monkey" class="imgfull">
+  <img src="img/logo-black-white.png" alt="monkey" class="imgsmall">
+  <div class=formbody>
+  <h1> Get started with your<br>account <h1>
+  <h5> Find your people. Engage your customers. Build your brand. Do it all with FakeChimp's Marketing Platform.<h5>
+<!--Old code
+  <form onsubmit="return validateForm();" action="http://cp202-server.appspot.com/order" method="post">
+
+
+    <h4>Email<h4>
+    <input type="text" name="email" id="email">
+    <br>
+    <h4>Username<h4>
+    <input type="text" name="username" id="username">
+    <br>
+    <h4><b>Password<b><h4>
+    <input type="text" name="password" id="password">
+    <br>
+    <input type="submit" value="Get started!" class="button">
+    <div class="disclaimer">
+    Old code-->
+    <form onsubmit="return validateForm();" action="http://cp202-server.appspot.com/register_with_image" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="student_id" id="student_id" value="170520160">
+      <h4>Email<h4>
+        <input type="text" name="email" id="email">
+      <h4>Country<h4>
+        <select name="country">
+          <option value="Canada">Canada</option>
+          <option value="United States">United States</option>
+        </select>
+        <!--<input type="dropdown" name="country" id="country" value="Canada">-->
+      <h4>Description<h4>
+        <input type="text" name="description" id="description" value="This is the description.">
+      <h4>Image Upload<h4>
+        <input type="file" name="avatarImage" id="avatarImage">
+      <input type="submit" value="Get started!" class="button" enabled>
+    <div class="disclaimer">
+    <p>By clicking the "Get Started!" button, you are creating a FakeChimp account<p>
+    </div>
+  </form>
+  </div>
+
+  <footer>
+    <p>2019 All Rights Reserved. FakeChimp is a registered trademark of WLUCP202 Class.<p>
+  </footer>
+
+
+</body>
+
+</html>

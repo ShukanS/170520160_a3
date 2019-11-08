@@ -1,0 +1,140 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather);
+@import url(http://fonts.googleapis.com/css?family=Proza+Libre);
+
+h1 {
+  text-align: center;
+  font-family: "Merriweather", Georgia;
+  font-size: 34px;
+  word-spacing: -0.2rem;
+  line-height: 1.1;
+  color: #241c15;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+}
+
+.passtitle {
+  float: left;
+}
+
+.passtoggle {
+  float: left;
+  margin-right: 0vw;
+}
+
+.imgfull {
+  width: 120px;
+  float: left;
+  display: block;
+}
+
+.imgsmall {
+  display: none;
+}
+
+body {
+  width: 70vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
+}
+
+.formbody {
+  text-align: left;
+  font-family: "Proza Libre", "Helvetica Neue";
+  font-size: 14px;
+  color: #241c15;
+  width: 55vw;
+  margin-left: 10vw;
+}
+
+footer {
+  font-size: 11px;
+  color: rgba(36, 28, 21, 0.65);
+  margin-top: 50px;
+  font-family: "Proza Libre", "Helvetica Neue";
+  margin-left: 10vw;
+  margin-right: 15vw;
+}
+
+h4 {
+  font-weight: bold !important;
+}
+
+input {
+  width: 50vw;
+  height: 5vh;
+}
+
+
+.button {
+  float: left;
+  background-color: #007c89;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 20px 0px;
+  cursor: pointer;
+  width: 20vw;
+  margin-right: 20px;
+}
+
+.button a:active {
+  background-color: #007c89;
+}
+
+.button a:disabled {
+  background-color: white;
+  border-color: rgba(36, 28, 21, 0.5);
+  color: rgba(36, 28, 21, 0.5);
+}
+
+.disclaimer {
+  margin: 20px 5px;
+  text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+
+  /* For mobile phones: */
+  [class*="button"] {
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    /* For mobile phones: */
+    [class*="formbody"] {
+      width: 100%;
+      margin: 10px;
+    }
+
+    @media only screen and (max-width: 600px) {
+
+      /* For mobile phones: */
+      input {
+        width: 100%;
+      }
+
+      @media only screen and (max-width: 600px) {
+
+        /* For mobile phones: */
+        [class*="imgfull"] {
+          display:none;
+        }
+
+        @media only screen and (max-width: 600px) {
+
+          /* For mobile phones: */
+          [class*="imgsmall"] {
+            width: 120px;
+            float: none;
+            display: block;
+            margin-left: 30%;
+          }
